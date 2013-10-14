@@ -1,45 +1,61 @@
 ***An exercise for Prime subscribers. Visit http://learn.thoughtbot.com/prime to learn more.***
 
-### Difficulty level: intermediate.
+### Difficulty level: intermediate-advanced.
 
 ## What You'll Learn
 
-Many people struggle with figuring out where to start testing and what to test next.
-In general you should start testing Outside In, as described in Josh Clayton's
-"Test-Driven Rails" workshop.
+Many people struggle figuring out where to start testing and what order to test
+in. This exercise helps guide you through the process of testing Outside In as
+shown in Josh Clayton's Learn workshop, ["Test-Driven Rails"](https://learn.thoughtbot.com/workshops/18-test-driven-rail)
 
-This exercise helps walk you through building a Rails application using the
-Outside In methodology. All the specs you need are pending and have no code, so
-you get to write the test and make it pass in the correct order.
+Specifically you will learn:
 
-To teach what order you can test in, we've included a tag in each spec. This
-will help you to implement tests using the Outside In methodologies in your
-Rails apps.
+* Where to begin testing
+* When to move from testing from the user's perspective (integration testing) to
+  testing your app's internal classes and methods (unit testing)
+* Testing validations and associations using Shoulda matchers
+* Testing the "Happy Path" first, and then adding more tests for edge cases like
+  invalid records
 
-The tags in the specs follow this structure: `Spec-1` `Spec-2` and so on until
-the last spec.
+## What You'll Build
 
-## Working/Submitting
+You will buid a small Customer Relationship Management (CRM) app. You can add
+contacts and then add notes to those contacts for later use. There is no
+authentication, but there will be enough functionality to understand how you
+test from an end user's perspective and then move to unit testing individual
+methods and classes.
 
-1. To work on this exercise, fork the repo.
-2. Search for the first pending spec, e.g. `ag Spec-1` (if you have Silver
-   Searcher installed) or `grep -nr Spec-2 spec`.
-3. Continue making the tests pass in order until all tests have been implemented
-   and are passing.
-4. Create a pull request so your code can be reviewed.
-5. Perform a code review on at least one other person's implementation. Your
-   comments should follow our code review guidelines:
-https://github.com/thoughtbot/guides/tree/master/code-review. Most important: be
-friendly. Make suggestions, not demands.
-6. Improve your solution based on the comments you've received and approaches
+## Completing This Exercise
+
+1. We will be using Ruby 2.0.0 for this exercise. Install using your preferred
+   package manager (rbenv, rvm, chruby, etc.)
+2. Fork the repository.
+3. Install the necessary gems and setup the database.
+
+        $ bundle install && rake db:setup
+
+4. Find the spec you need to implement
+
+        $ grep Spec1 spec
+
+5. Open the corresponding spec and write out a test.
+6. Run the test suite by running `rake` from your project root.
+7. Make the test passes and refactor until you're satisfied.
+8. find the next spec `grep Spec2 spec` and repeat until there are no more pending specs!
+
+## Submitting Your Exercise for Review
+
+1. Create a pull request so your code can be reviewed.
+2. Review at least one other person's solution. Your comments should follow our
+   code review guidelines:
+   https://github.com/thoughtbot/guides/tree/master/code-review. Most importantly:
+   be friendly. Make suggestions, not demands.
+3. Improve your solution based on the comments you've received and approaches
    you've learned from reviewing others' attempts.
 
-## Guides for Coding Well
+## Resources and Other Good Reads
 
-Use the following guides for getting things done, programming well, and
-programming in style.
-
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best
-  Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
+* [Test-Driven Rails Workshop](https://learn.thoughtbot.com/workshops/18-test-driven-rail) by Josh Clayton
+* [Running specs from Vim](http://robots.thoughtbot.com/post/57444559280/running-specs-from-vim) by Dan Croak
+* [End-to-end Testing with RSpec and Capybara](http://robots.thoughtbot.com/post/33771089985/rspec-integration-tests-with-capybara) by Harlow Ward
+* [Happy path](http://en.wikipedia.org/wiki/Happy_path) on Wikipedia
