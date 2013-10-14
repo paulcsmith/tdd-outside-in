@@ -2,6 +2,8 @@
 *.DS_Store
 *.swo
 *.swp
+.env
+.foreman
 .bundle
 .sass-cache/
 bin/stubs
