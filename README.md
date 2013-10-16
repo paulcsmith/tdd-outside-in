@@ -36,7 +36,7 @@ methods and classes.
 
 4. Find the spec you need to implement
 
-        $ grep Spec1 spec
+        $ grep -nr Spec1 spec
 
 5. Open the corresponding spec and write out a test.
 6. Run the test suite by running `rake` from your project root.
