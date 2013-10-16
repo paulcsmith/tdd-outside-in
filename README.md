@@ -13,8 +13,9 @@ Specifically you will learn:
 * Where to begin testing
 * When to move from testing from the user's perspective (integration testing) to
   testing your app's internal classes and methods (unit testing)
-* Testing validations and associations using Shoulda matchers
-* Testing the "Happy Path" first, and then adding more tests for edge cases like
+* Testing validations and associations using [Shoulda
+  matchers](https://github.com/thoughtbot/shoulda-matchers)
+* Testing the ["Happy Path"](http://en.wikipedia.org/wiki/Happy_path) first, and then adding more tests for edge cases like
   invalid records
 
 ## What You'll Build
