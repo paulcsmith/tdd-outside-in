@@ -41,7 +41,7 @@ methods and classes.
 
 5. Open the corresponding spec and write out a test.
 6. Run the test suite by running `rake` from your project root.
-7. Make the test passes and refactor until you're satisfied.
+7. Make the tests pass and refactor until you're satisfied.
 8. find the next spec `grep Spec2 spec` and repeat until there are no more pending specs!
 
 ## Submitting Your Exercise for Review
