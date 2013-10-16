@@ -42,7 +42,7 @@ methods and classes.
 5. Open the corresponding spec and write out a test.
 6. Run the test suite by running `rake` from your project root.
 7. Make the tests pass and refactor until you're satisfied.
-8. find the next spec `grep Spec2 spec` and repeat until there are no more pending specs!
+8. find the next spec `grep -nr Spec2 spec` and repeat until there are no more pending specs!
 
 ## Submitting Your Exercise for Review
 
@@ -57,6 +57,6 @@ methods and classes.
 ## Resources and Other Good Reads
 
 * [Test-Driven Rails Workshop](https://learn.thoughtbot.com/workshops/18-test-driven-rail) by Josh Clayton
-* [Running specs from Vim](http://robots.thoughtbot.com/post/57444559280/running-specs-from-vim) by Dan Croak
+* [Running Specs from Vim](http://robots.thoughtbot.com/post/57444559280/running-specs-from-vim) by Dan Croak
 * [End-to-end Testing with RSpec and Capybara](http://robots.thoughtbot.com/post/33771089985/rspec-integration-tests-with-capybara) by Harlow Ward
-* [Happy path](http://en.wikipedia.org/wiki/Happy_path) on Wikipedia
+* [Happy Path](http://en.wikipedia.org/wiki/Happy_path) on Wikipedia
